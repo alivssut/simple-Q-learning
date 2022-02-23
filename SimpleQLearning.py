@@ -48,6 +48,7 @@ class Env:
 
         if (self.i, self.j) == (2, 2) or (self.i, self.j) == (1, 2):
             reward = -1
+            done = True
 
         return (self.rows * self.i + self.j, reward, done, None)
 
